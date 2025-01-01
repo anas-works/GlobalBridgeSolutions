@@ -238,11 +238,13 @@ body{
     font-family: "Poppins" , sans-serif;
     color: #70b4d1;
     font-size: 1.2vw;
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
     transition: all 0.4s ease;
 }
-
+.cards-btn-1{
+    cursor: none;
+}
 @media (max-width: 460px){
 
     
@@ -440,14 +442,14 @@ body{
 }
 
 #head-1 {
-    cursor: pointer;
+    cursor: none;
     color: #798081;
     transition: all 0.3s ease;
 }
 
 #head-2 {
     color: #798081;
-    cursor: pointer;
+    cursor: none;
     transition: all 0.3s ease;
 }
 
@@ -670,7 +672,7 @@ select:focus {
 }
 
 
-footer_row {
+.footer_row {
     width: 80vw;
     padding: 2rem;
     margin-top: 4rem;

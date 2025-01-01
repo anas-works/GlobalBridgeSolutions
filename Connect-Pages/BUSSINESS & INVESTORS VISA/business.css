@@ -200,10 +200,9 @@ body{
     font-family: "Poppins" , sans-serif;
     color: #70b4d1;
     font-size: 1.2vw;
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
     transition: all 0.4s ease;
-    cursor: pointer;
     background-color: #121315;
 }
 .det-btn button:hover{

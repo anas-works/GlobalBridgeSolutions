@@ -167,7 +167,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
+    cursor: none;
     font-weight: 600;
     font-size: 18px;
     color: #131414;
@@ -220,7 +220,7 @@ body{
     border-radius: 8px;
     background-color: #06965c;
     color: white;
-    cursor: pointer;
+    cursor: none;
     transition: background-color 0.3s ease;
   }
   
