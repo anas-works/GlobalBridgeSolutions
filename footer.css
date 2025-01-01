@@ -156,13 +156,13 @@
   color: white;
   font-size: 2vw;
   font-family: 'Montserrat', sans-serif;
-  cursor: none;
 }
 
 .footer_row img {
   width: 2rem;
   border: 1px solid white;
   border-radius: 50%;
+  cursor: none !important;
 }
 
 /* ------------------ */
