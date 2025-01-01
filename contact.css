@@ -100,7 +100,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1vw;
-    cursor: pointer;
+    cursor: none;
 }
 .menu{
     font-size: 1vw;
@@ -250,7 +250,7 @@ body{
 }
 .logo-pics{
     width: 3vw;
-    cursor: pointer;
+    cursor: none;
 }
 .logo-pics:hover{
     animation: upAndDown 0.5s ease infinite;
@@ -404,17 +404,18 @@ body{
     width: 30vw;
 }
 .arrow-down{
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1.75vw;
+    height: 1.75vw;
     border-radius: 50%;
     border: 0.13vw solid var(--PrimaryColor);
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(6vw);
+    cursor: none;
 }
 .arrow-down-01{
-    width: 1vw;
+    width: 80%;
     height: auto;
 }
 @media (max-width: 500px) {
@@ -652,7 +653,7 @@ select:focus{
     font-family: Arial,sans-serif ;
     transition: all 0.3s ease;
     background-color: transparent;
-    cursor: pointer;
+    cursor: none;
 }
 .btn-submit:hover{
     background-color: #c3e2ef;
@@ -849,6 +850,7 @@ select:focus{
   }
   #footer-01 img{
     transition: transform 1s;
+    cursor: none;
   }
   #footer-01 img:hover{
   

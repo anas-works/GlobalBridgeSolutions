@@ -29,6 +29,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: none;
 }
 .logo-in{
     width: 8vw;
@@ -40,7 +41,7 @@
     justify-content: center;
     align-items: center;
     gap: 1vw;
-    cursor: pointer;
+    cursor: none;
 }
 .menu{
     font-size: 1vw;
@@ -186,7 +187,7 @@
 }
 .logo-pics{
     width: 3vw;
-    cursor: pointer;
+    cursor: none !important;
 }
 .logo-pics:hover{
     animation: upAndDown 0.5s ease infinite;
@@ -217,7 +218,7 @@
     font-size: 5vw;
     text-transform: uppercase;
     line-height: 5vw;
-    cursor: pointer;
+    cursor: none !important;
     width: fit-content;
     transition: transform 0.2s linear;
 }
@@ -225,6 +226,7 @@
     text-decoration: none;
     color: #e0eeee;
     transition: color 0.4s ease;
+    cursor: none !important;
 }
 .a-tags:hover{
     color: #70b4d1;
@@ -233,7 +235,7 @@
     transform: translateX(2vw);
 }
 .imgUp{
-    cursor: pointer;
+    cursor: none !important;
 }
 @media (max-width: 500px) {
     #menu01{
