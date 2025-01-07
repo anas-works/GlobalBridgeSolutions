@@ -227,7 +227,7 @@
                     </div>
                     <div class="button-row">
                         <!--<button type="submit" class="btn-submit" onclick="sendMail()">Submit</button>-->
-                        <button type="submit" class="btn-submit">Submit</button>
+                        <button type="submit" class="btn-submit" id="submit-button">Submit</button>
 
                     </div>
                 </form>
@@ -251,19 +251,7 @@
                       </svg>
                     </div>
                   </div>
-
-                <div class="message-container" id="popup-overlay" id="confirmation-message" style="display:none;">
-                    <div class="text-container">
-                      <div class="text-top">You have already sent the information.</div>
-                    </div>
-                    <div class="close-icon" id="close-popup">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
-                      </svg>
-                    </div>
-                  </div>
                 
-                  <button id="btnnn1">press</button>
             </div>
         </section>
 
@@ -348,8 +336,17 @@
         
         <!-- // Form pop-up -->
 <script>
+let isFormSubmitted = false;  // Flag to track if the form has already been submitted
+
 document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent form from redirecting
+  e.preventDefault();  // Prevent form from redirecting
+
+  // If the form has already been submitted, show a confirmation message and stop submission
+//   if (isFormSubmitted) {
+//         document.getElementById("submit-button").textContent = "Submitted";
+//       document.getElementById("submit-button").style.backgroundColor = "grey";
+//     return;
+//   }
 
   // Collect form data
   const formData = new FormData(this);
@@ -361,26 +358,38 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
   })
     .then((response) => response.text())
     .then((data) => {
+      // Disable the submit button to prevent multiple submissions
+      document.getElementById("submit-button").disabled = true;
+
+      // Set the flag to true to indicate the form has been submitted
+      isFormSubmitted = true;
+
       // Show the popup
+      document.getElementById("popup-overlay").style.display = "flex";
+      
+      // Fade in the popup
+      setTimeout(function(){
+          document.getElementById("popup-overlay").style.opacity = 1;
+      }, 200);
+      
+      // Start fading out the popup after 2.5 seconds, and hide it after 3 seconds
+      setTimeout(function() {
+          document.getElementById("popup-overlay").style.opacity = 0;  // Start fading out after 2.5 seconds
+          setTimeout(function() {
+              document.getElementById("popup-overlay").style.display = "none";  // Hide the popup after fade-out
+          }, 500);  // Wait for the fade-out duration
+      }, 2500);
+
+      // Optionally, you can also change the submit button text to indicate submission
+      document.getElementById("submit-button").textContent = "Submitted";
+      document.getElementById("submit-button").style.backgroundColor = "#D8D8D8";
+      document.getElementById("submit-button").style.color = "#838383";
+      document.getElementById("submit-button").style.borderColor = "#D8D8D8";
       
     })
     .catch((error) => {
       console.error("Error:", error);
     });
-});
-
-document.getElementById("btnnn1").addEventListener("click", function(){
-    document.getElementById("popup-overlay").style.display = "flex";
-    setTimeout(function(){
-        document.getElementById("popup-overlay").style.opacity = 1;
-    }, 200);
-
-    setTimeout(function() {
-        document.getElementById("popup-overlay").style.opacity = 0;  // Start fading out after 5 seconds
-        setTimeout(function() {
-            document.getElementById("popup-overlay").style.display = "none";  // Hide the popup after fade-out
-        }, 500);  // Wait for the fade-out duration
-    }, 2500);
 });
 
 // Close the popup

@@ -54,7 +54,7 @@ const open = document.getElementById("menu-open");
 const cursorBall = document.querySelector('.cursor-ball');
 let mouseX = 0, mouseY = 0;
 let ballX = 0, ballY = 0;
-const delay = 0.5; // Adjust this value for more or less delay
+const delay = 0.9; // Adjust this value for more or less delay
 
 document.addEventListener('mousemove', function(e) {
     mouseX = e.clientX;
