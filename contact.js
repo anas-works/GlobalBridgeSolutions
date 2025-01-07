@@ -21,29 +21,29 @@ updateTime();
 
 
 // HIDING FORMS
-const hr1 = document.getElementById("hr-1");
-const hr2 = document.getElementById("hr-2");
-const head1 = document.getElementById("head-1");
-const head2 = document.getElementById("head-2");
-const hidingForm = document.getElementById("hiding");
+// const hr1 = document.getElementById("hr-1");
+// const hr2 = document.getElementById("hr-2");
+// const head1 = document.getElementById("head-1");
+// const head2 = document.getElementById("head-2");
+// const hidingForm = document.getElementById("hiding");
 
 
-head2.addEventListener("click" , function(){
-    hr1.style.opacity = 0;
-    hr2.style.opacity = 1;
-    head2.style.color = "#e0eeee";
-    head1.style.color = "#798081";
-    hidingForm.style.display = "block";
-});
+// head2.addEventListener("click" , function(){
+//     hr1.style.opacity = 0;
+//     hr2.style.opacity = 1;
+//     head2.style.color = "#e0eeee";
+//     head1.style.color = "#798081";
+//     hidingForm.style.display = "block";
+// });
 
 
-head1.addEventListener("click" , function(){
-    hr1.style.opacity = 1;
-    hr2.style.opacity = 0;
-    head2.style.color = "#798081";
-    head1.style.color = "#e0eeee";
-    hidingForm.style.display = "none";
-});
+// head1.addEventListener("click" , function(){
+//     hr1.style.opacity = 1;
+//     hr2.style.opacity = 0;
+//     head2.style.color = "#798081";
+//     head1.style.color = "#e0eeee";
+//     hidingForm.style.display = "none";
+// });
 
 
 

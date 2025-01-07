@@ -4,10 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Global Bridge Solution</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="header.css">
     <link rel="icon" href="anas-assets/gbs-fav-icon.png">
+
+<!--    <script type="text/javascript"-->
+<!--        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">-->
+<!--</script>-->
+<!-- // <script type="text/javascript"> -->
+<!-- //   (function(){
+//       emailjs.init({
+//         publicKey: "ZzW7tQEWCSECwDXsx",
+//       });
+//   })();
+// </script> -->
+<!--<script src="email-js.js"></script>-->
 </head>
 
 <body>
@@ -27,8 +39,8 @@
               <div class="menu-part" id="menu-part">
                 <div class="menu">MENU</div>
                 <div class="menu-open" id="menu-open">
-                  <!-- <span class="_1">__</span> -->
-                  <!-- <span class="_2">_</span> -->
+                  <!-- <span class="1">_</span> -->
+                  <!-- <span class="2"></span> -->
                   <span class="_1"></span>
                   <span class="_2"></span>
                 </div>
@@ -104,7 +116,7 @@
             <div class="main">
                 <div class="content">
                     <h1 class="main-heading">
-                        Inquire for <br> Reliable Solutions
+                        Reach Out <br> for Solutions
                     </h1>
                     <div class="main-para">
                         Start Your Immigration Journey with Us Today Have questions? Need expert advice? We're here to help. Contact GlobalBridge Solutions for a consultation.
@@ -130,18 +142,21 @@
             <div class="sec-3">
                 <div class="part-1">
                     <div class="selecting-h">
-                        <span id="head-1">Say Hello!
+                        <span id="head-1">Enquire Now!
                             <hr class="hr" id="hr-1">
                         </span>
-                        <span id="head-2">Get Visa
-                            <hr class="hr" id="hr-2">
-                        </span>
+                        <!--<span id="head-2">Get Visa-->
+                        <!--    <hr class="hr" id="hr-2">-->
+                        <!--</span>-->
                     </div>
                     <div class="time">
                         <span id="datetime"></span>
                     </div>
                 </div>
-                <form class="form">
+                
+                <!--form-->
+                <form id="contact-form" class="form" action="process-form.php" method="POST">
+                    <!--<form class="form">-->
                     <div class="row row-1">
                         <div class="name">
                             <span class="heading-forms">Name*</span>
@@ -155,65 +170,100 @@
                     </div>
                     <div class="row row-2">
                         <div class="name phone">
-                            <span class="heading-forms">Phone</span>
+                            <span class="heading-forms">Phone*</span>
                             <input type="tel" id="phone-no" class="boxes" name="phone" placeholder="Your phone number"
                                 required>
                         </div>
                         <div class="email company">
-                            <span class="heading-forms">Company/Organisation</span>
+                            <span class="heading-forms">Company/Organisation*</span>
                             <input type="text" id="company-in" class="boxes" name="company"
                                 placeholder="Ex. Global Bridge Solutions" required>
                         </div>
                     </div>
-                    <div id="hiding">
-                        <div class="row row-3">
-                            <div class="name phone">
-                                <span class="heading-forms">Visa type*</span>
-                                <select class="boxes dropdown" name="dropdown">
-                                    <option value="">Project type</option>
-                                    <option value="option2">STUDENT VISA</option>
-                                    <option value="option3">WORK VISA</option>
-                                    <option value="option4">FAMILY & SPOUSE VISA</option>
-                                    <option value="option4">PERMANENT RESIDENCY</option>
-                                    <option value="option4">BUSSINESS & INVESTORS</option>
-                                </select>
-                            </div>
-                            <div class="email company">
-                                <span class="heading-forms">Project budget (USD)*</span>
-                                <select class="boxes dropdown" name="dropdown">
-                                    <option value="">Select budget</option>
-                                    <option value="option2">Less than $1000 USD</option>
-                                    <option value="option3">$1001 - $5000 USD</option>
-                                    <option value="option4">$5001 - $10000 USD</option>
-                                    <option value="option5">$10001 - $20000 USD</option>
-                                    <option value="option6">More than $20000 USD</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row row-4">
-                            <div class="name phone">
-                                <span class="heading-forms heading-hear">How did you hear about us?</span>
-                                <select class="boxes dropdown3" name="dropdown">
-                                    <option value="">Select</option>
-                                    <option value="option2">LinkedIn</option>
-                                    <option value="option3">instagram</option>
-                                    <option value="option4">Facebook</option>
-                                    <option value="option5">Tiktok</option>
-                                    <option value="option6">Others</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- <div id="hiding">-->
+                    <!--    <div class="row row-3">-->
+                    <!--        <div class="name phone">-->
+                    <!--            <span class="heading-forms">Visa type*</span>-->
+                    <!--            <select class="boxes dropdown" name="dropdown">-->
+                    <!--                <option value="">Project type</option>-->
+                    <!--                <option value="option2">STUDENT VISA</option>-->
+                    <!--                <option value="option3">WORK VISA</option>-->
+                    <!--                <option value="option4">FAMILY & SPOUSE VISA</option>-->
+                    <!--                <option value="option4">PERMANENT RESIDENCY</option>-->
+                    <!--                <option value="option4">BUSSINESS & INVESTORS</option>-->
+                    <!--            </select>-->
+                    <!--        </div>-->
+                    <!--        <div class="email company">-->
+                    <!--            <span class="heading-forms">Project budget (USD)*</span>-->
+                    <!--            <select class="boxes dropdown" name="dropdown">-->
+                    <!--                <option value="">Select budget</option>-->
+                    <!--                <option value="option2">Less than $1000 USD</option>-->
+                    <!--                <option value="option3">$1001 - $5000 USD</option>-->
+                    <!--                <option value="option4">$5001 - $10000 USD</option>-->
+                    <!--                <option value="option5">$10001 - $20000 USD</option>-->
+                    <!--                <option value="option6">More than $20000 USD</option>-->
+                    <!--            </select>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--    <div class="row row-4">-->
+                    <!--        <div class="name phone">-->
+                    <!--            <span class="heading-forms heading-hear">How did you hear about us?</span>-->
+                    <!--            <select class="boxes dropdown3" name="dropdown">-->
+                    <!--                <option value="">Select</option>-->
+                    <!--                <option value="option2">LinkedIn</option>-->
+                    <!--                <option value="option3">instagram</option>-->
+                    <!--                <option value="option4">Facebook</option>-->
+                    <!--                <option value="option5">Tiktok</option>-->
+                    <!--                <option value="option6">Others</option>-->
+                    <!--            </select>-->
+                    <!--        </div>-->
+                    <!--    </div>-->
+                    <!--</div> -->
                     <div class="row row-5">
                         <span class="heading-forms">Tell us about your problem*</span>
-                        <textarea class="boxes box-feed" name="feedback"
+                        <textarea class="boxes box-feed" id="message" name="message"
                             placeholder="Hello, Global Bridge Solutions. We need expert help to make our journey abroad smooth and successful"
                             required></textarea>
                     </div>
                     <div class="button-row">
-                        <button href="#" class="btn-submit"><span>Submit</span></button>
+                        <!--<button type="submit" class="btn-submit" onclick="sendMail()">Submit</button>-->
+                        <button type="submit" class="btn-submit">Submit</button>
+
                     </div>
                 </form>
+                <!--form-->
+                
+                
+                <!-- Popup -->
+                <div class="message-container" id="popup-overlay">
+                    <div class="icon-container">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="success-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
+                      </svg>
+                    </div>
+                    <div class="text-container">
+                      <div class="text-top">Thank you for reaching out!</div>
+                      <div class="text-bottom">Our team will contact you within the next 24 hours to assist you further</div>
+                    </div>
+                    <div class="close-icon" id="close-popup">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+                      </svg>
+                    </div>
+                  </div>
+
+                <div class="message-container" id="popup-overlay" id="confirmation-message" style="display:none;">
+                    <div class="text-container">
+                      <div class="text-top">You have already sent the information.</div>
+                    </div>
+                    <div class="close-icon" id="close-popup">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+                      </svg>
+                    </div>
+                  </div>
+                
+                  <button id="btnnn1">press</button>
             </div>
         </section>
 
@@ -290,12 +340,59 @@
 
 
 
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
         <script src="contact.js"></script>
         <script src="header.js"></script>
         <script src="footer.js"></script>
+        
+        <!-- // Form pop-up -->
+<script>
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Prevent form from redirecting
+
+  // Collect form data
+  const formData = new FormData(this);
+
+  // Send form data using Fetch API
+  fetch("process-form.php", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => response.text())
+    .then((data) => {
+      // Show the popup
+      
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+});
+
+document.getElementById("btnnn1").addEventListener("click", function(){
+    document.getElementById("popup-overlay").style.display = "flex";
+    setTimeout(function(){
+        document.getElementById("popup-overlay").style.opacity = 1;
+    }, 200);
+
+    setTimeout(function() {
+        document.getElementById("popup-overlay").style.opacity = 0;  // Start fading out after 5 seconds
+        setTimeout(function() {
+            document.getElementById("popup-overlay").style.display = "none";  // Hide the popup after fade-out
+        }, 500);  // Wait for the fade-out duration
+    }, 2500);
+});
+
+// Close the popup
+document.getElementById("close-popup").addEventListener("click", function () {
+    document.getElementById("popup-overlay").style.opacity = 0;
+    setTimeout(function(){
+        document.getElementById("popup-overlay").style.display = "none";
+    }, 500);
+});
+</script>
+
+        
         
 </body>
 

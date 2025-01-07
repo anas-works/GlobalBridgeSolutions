@@ -948,3 +948,67 @@ select:focus{
 .imgUp{
     width: 2.2vw !important;
 }
+
+
+
+.message-container {
+    background: #232531;
+    width: 33vw;
+    height: 7vw;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins' , sans-serif;
+    }
+
+    .icon-container {
+    height: 70%;
+    width: 16%;
+    background: #2E303C;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .text-container{
+        width: 60%;
+    }
+    .text-top {
+    color: #e0eeee;
+    font-size: 1.3vw;
+    margin-bottom: 0.3vw;
+    }
+
+    .text-bottom {
+    color: #686F7C;
+    font-size: 1vw;
+    }
+
+    .close-icon {
+    width: 10%;
+    height: auto;
+    }
+
+    .close-icon svg {
+    color: #4B5563;
+    cursor: pointer;
+    }
+
+    .success-icon {
+    color: #2B9875;
+    height: 50%;
+    width: 50%;
+    }
+
+    #popup-overlay {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        display: none;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+      }
+      
