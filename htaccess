@@ -1,0 +1,15 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Redirect "index" to the root URL
+RewriteCond %{THE_REQUEST} /index(\.html)? [NC]
+RewriteRule ^index(\.html)?$ / [R=301,L]
+
+# Redirect .html URLs to clean URLs
+RewriteCond %{THE_REQUEST} \s(.+?)\.html[\s?]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Remove .html extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ $1.html [L]
