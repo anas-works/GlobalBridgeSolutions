@@ -217,7 +217,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
+.socail_inner a{
+  text-decoration: none;
+}
+.socail_inner a hr{
+  color: #fff;
+}
 
 
 .myHover_s {
