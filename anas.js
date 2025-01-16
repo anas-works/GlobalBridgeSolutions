@@ -1,20 +1,3 @@
-      document.getElementById('item-1').addEventListener('click', function(){
-        const url = 'https://www.facebook.com/profile.php?id=61563752129818';
-        window.open(url, '_blank');
-      });
-      document.getElementById('item-2').addEventListener('click', function(){
-        const url = '#';
-        // window.open(url, '_blank');
-      });
-      document.getElementById('item-3').addEventListener('click', function(){
-        const url = 'https://www.instagram.com/global.bridge.solutions?igsh=MXRqamN0NHA5YjAzYw==';
-        window.open(url, '_blank');
-      });
-      document.getElementById('item-4').addEventListener('click', function(){
-        const url = 'https://www.tiktok.com/@globalbridgesolutions?_t=8oajOq6bv3x&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAaY5_yX2HczvnS6RdU1DHgYpMn3YENARxNkBtClgDUrXOHgxtS9E6Ik4mog_aem_t7Y28ToaHNVmLcLEn9SP-A';
-        window.open(url, '_blank');
-      });
-
     gsap.registerPlugin(ScrollTrigger);
     
 

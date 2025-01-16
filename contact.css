@@ -1002,7 +1002,7 @@ select:focus{
     width: 50%;
     }
 
-    #popup-overlay {
+ #popup-overlay {
         position: fixed;
         bottom: 10%;
         left: 50%;

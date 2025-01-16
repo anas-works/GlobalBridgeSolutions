@@ -203,6 +203,7 @@ body {
   cursor: none;
 }
 
+
 .socail_item img {
   width: 5vw;
   transition: 1s ease;
@@ -211,18 +212,20 @@ body {
 .socail_item:hover img {
   transform: rotate(360deg);
 }
-
-.socail_item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .socail_inner a{
   text-decoration: none;
 }
 .socail_inner a hr{
   color: #fff;
 }
+
+
+.socail_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 
 .myHover_s {

@@ -123,13 +123,12 @@
 }
 
 .info_h {
-  font-size: 1.5vw;
+  font-size: 1.7vw !important;
   font-weight: 400;
 }
 
 .info_t {
-  font-size: 2.5vw;
-  font-size: 2vw;
+  font-size: 1.6vw !important;
   font-weight: 400;
   transition: transform .8s;
 }
