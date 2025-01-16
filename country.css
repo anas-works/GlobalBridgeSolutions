@@ -108,7 +108,7 @@ body{
 .section-2{
     width: 100vw;
     height: 60vh;
-    background: linear-gradient(to bottom,rgba(18,19,21,0.4),rgba(18,19,21, 1)),
+    background: linear-gradient(to bottom,rgba(18,19,21,0.5),rgba(18,19,21, 1)),
     url('country assets/bgImg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -140,7 +140,7 @@ body{
 /* SECTION 3 */
 .section-3{
     width: 100vw;
-    height: 50vw;
+    height: 120vw;   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,22 +152,23 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 4%;
+    gap: 2.3%;
 }
 .rows{
     width: 100%;
-    height: 50%;
+    height: 22%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .boxes{
-    width: 32.3%;
+    width: 32%;
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 .video-s3{
     width: 100%;
@@ -217,7 +218,7 @@ body{
     }
     .boxes{
         width: 85%;
-        height: 45vw;
+        height: 50vw;
         margin-bottom: 6vw;
         padding: 0;
     }

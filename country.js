@@ -27,20 +27,3 @@ if(window.innerWidth > 500){
     video.loop = true;  // Loop to play continuously
 });
 }
-
-const pkBtn = document.getElementById('PkBox');
-const ukBtn = document.getElementById('ukBox');
-const franceBtn = document.getElementById('frBox');
-const germanyBtn = document.getElementById('gerBox');
-const usBtn = document.getElementById('usBox');
-const australiaBtn = document.getElementById('ausBox');
-
-function contactPage() {
-  window.location.href = 'contact-us.html';
-}
-pkBtn.addEventListener('click', contactPage);
-ukBtn.addEventListener('click', contactPage);
-franceBtn.addEventListener('click', contactPage);
-germanyBtn.addEventListener('click', contactPage);
-usBtn.addEventListener('click', contactPage);
-australiaBtn.addEventListener('click', contactPage);
